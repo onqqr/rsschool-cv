@@ -21,6 +21,8 @@ Having a huge community, free materials, prospects for career growth and self-ed
 
 I hope that my acquired experience and ability to self-learn will help me become a front-end developer.
 
+---
+
 ### Skills and Proficiency:
 
 + HTML
@@ -29,6 +31,8 @@ I hope that my acquired experience and ability to self-learn will help me become
 + Git, GitHub
 + VS Code, Microsoft VS
 + C# (Basic), Python (Basic)
+
+---
 
 ### Code Example:
 
