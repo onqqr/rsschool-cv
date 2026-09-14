@@ -1,11 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV2</title>
-</head>
-<body>
-CV2
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pavel Hetsman - CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="profile">
+          <img src="img/photoForCV.jpg" alt="Pavel Hetsman" class="photo" />
+          <div class="profile-text">
+            <p class="kicker">— Frontend Developer</p>
+            <h1>Pavel <span>Hetsman</span></h1>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#code">Code</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#english">English</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section id="contacts">
+          <h2>Contacts</h2>
+          <ul>
+            <li>Phone: <a href="tel:+375298446523">+375298446523</a></li>
+            <li>
+              E-mail:
+              <a href="mailto:dnbyaniss@gmail.com">dnbyaniss@gmail.com</a>
+            </li>
+            <li>Telegram: <a href="https://t.me/onqqr">@onqqr</a></li>
+          </ul>
+        </section>
+
+        <section id="skills">
+          <h2>Skills</h2>
+          <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript (Basic)</li>
+            <li>Git, GitHub</li>
+            <li>VS Code, Microsoft VS</li>
+            <li>C# (Basic), Python (Basic)</li>
+          </ul>
+        </section>
+
+        <section id="about">
+          <h2>About</h2>
+          <p>
+            I started my career as a process plant operator at the Mozyr Oil
+            Refinery, which allowed me to gain experience in working with a team
+            and achieving assigned tasks.
+          </p>
+          <p>
+            After 5 years of main work, my interest in realizing myself in
+            something else led me to Poland, where I was able to work in other
+            professions. Thanks to a year of living in another country, I
+            developed my horizons and insight into digital technologies.
+          </p>
+          <p>
+            Having a huge community, free materials, prospects for career growth
+            and self-education, I decided to return back and devote all my free
+            time to learning front-end development.
+          </p>
+          <p>
+            I hope that my acquired experience and ability to self-learn will
+            help me become a front-end developer.
+          </p>
+        </section>
+
+        <section id="code">
+          <h2>Code example</h2>
+          <pre><code>using System;
+
+namespace CSarp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("What's your name?");
+            string name = Console.ReadLine();
+
+            Console.WriteLine($"Hello, {name}");
+
+            Console.WriteLine("\nEnter your age: ");
+            int x = Convert.ToInt32(Console.ReadLine());
+        }
+    }
+}</code></pre>
+        </section>
+
+        <section id="projects">
+          <h2>Projects</h2>
+          <ul>
+            <li>
+              Convert PDF — in-browser DOCX/XLSX to PDF converter.
+              <a href="https://proto-pdf-convert.netlify.app/">live page</a>
+            </li>
+            <li>
+              CV — personal curriculum vitae page.
+              <a href="https://github.com/onqqr/rsschool-cv">source code</a>
+            </li>
+          </ul>
+        </section>
+
+        <section id="education">
+          <h2>Education</h2>
+          <ul>
+            <li>
+              HTML and CSS Tutorials on
+              <a href="https://ru.hexlet.io/">Hexlet</a> (completed)
+            </li>
+            <li>
+              JavaScript Manual on
+              <a href="https://learn.javascript.ru/">learnjavascript.ru</a> (in
+              progress)
+            </li>
+            <li>
+              RS Schools Course «JavaScript/Front-end. Stage 0» (completed)
+            </li>
+            <li>
+              RS Schools Course «JavaScript/Front-end. Stage 1» (in progress)
+            </li>
+          </ul>
+        </section>
+
+        <section id="english">
+          <h2>English</h2>
+          <p>
+            English — A2 (in the learning process). I have experience using
+            English while traveling to Sweden and Italy.
+          </p>
+          <p>Polish — A2. Russian — Native.</p>
+        </section>
+      </main>
+
+      <footer>
+        <a href="https://github.com/onqqr">GitHub</a>
+        <span>2026</span>
+        <a class="logo-sticker" href="https://rs.school/courses/javascript-ru">
+          <img src="img/rs-school-logo.svg" alt="RS School" class="logo" />
+        </a>
+      </footer>
+    </div>
+  </body>
 </html>
