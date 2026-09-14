@@ -5,9 +5,9 @@
 
 ### Contact Information
 
-**Phone:** +375298446524<br>
+**Phone:** +375298446523<br>
 **E-mail:** dnbyaniss@gmail.com<br>
-**Telegram:** @qo_bad<br>
+**Telegram:** @onqqr<br>
 
 ---
 

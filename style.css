@@ -1,50 +1,197 @@
+:root {
+  --canvas: #0d1117;
+  --canvas-subtle: #161b22;
+  --fg: #e6edf3;
+  --fg-muted: #8b949e;
+  --border: #30363d;
+  --accent: #2f81f7;
+  --mark: #f97316;
+  --mark-soft: #ffb86b;
+}
+
 * {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.5;
-  color: #222;
-  background: #fff;
+  min-height: 100%;
+  color: var(--fg);
+  background: var(--canvas);
+  font-family: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--mark-soft);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--fg);
 }
 
 .container {
-  max-width: 900px;
+  max-width: 980px;
   margin: 0 auto;
-  padding: 24px 16px;
+  padding: 0 24px 48px;
 }
 
 header {
-  text-align: center;
+  padding: 28px 0 32px;
+  border-bottom: 1px solid var(--border);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 28px;
 }
 
 .photo {
   display: block;
-  max-width: 220px;
-  width: 100%;
-  height: auto;
-  margin: 0 auto 16px;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--canvas-subtle);
+}
+
+.kicker {
+  margin: 0 0 8px;
+  color: var(--mark);
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.profile-text h1 {
+  margin: 0;
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.profile-text h1 span {
+  color: var(--mark);
+}
+
+nav {
+  margin-top: 28px;
 }
 
 nav ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px 16px;
+  gap: 8px 20px;
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 
+nav a {
+  color: var(--fg-muted);
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--fg);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
+  padding-top: 8px;
+}
+
 section {
-  margin-top: 24px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+#about,
+#code,
+#english {
+  grid-column: 1 / -1;
+}
+
+h2 {
+  margin: 0 0 12px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+section p {
+  margin: 0 0 12px;
+  color: var(--fg-muted);
+}
+
+section p:last-child {
+  margin-bottom: 0;
+}
+
+#contacts ul,
+#projects ul,
+#education ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#contacts li,
+#projects li,
+#education li {
+  margin-bottom: 10px;
+  color: var(--fg-muted);
+}
+
+#contacts li:last-child,
+#projects li:last-child,
+#education li:last-child {
+  margin-bottom: 0;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.skills-list li {
+  padding: 4px 10px;
+  color: var(--mark-soft);
+  border: 1px solid var(--mark);
+  border-radius: 999px;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.78rem;
 }
 
 pre {
   overflow-x: auto;
-  padding: 12px;
-  background: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+  color: var(--fg);
+  background: var(--canvas-subtle);
+  border: 1px dashed var(--border);
+  border-radius: 10px;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.85rem;
+  line-height: 1.5;
 }
 
 footer {
@@ -52,19 +199,54 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  margin-top: 32px;
-  padding: 16px;
-  background: #111;
-  color: #fff;
+  gap: 16px;
+  margin-top: 8px;
+  padding: 20px 0 8px;
+  color: var(--fg-muted);
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.85rem;
 }
 
 footer a {
-  color: #fff;
+  color: var(--fg-muted);
+}
+
+footer a:hover {
+  color: var(--mark-soft);
+}
+
+.logo-sticker {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  background: #efece5;
+  border: 1px dashed var(--mark);
+  border-radius: 8px;
+  box-shadow: 4px 4px 0 var(--mark);
+  transform: rotate(-2deg);
+}
+
+.logo-sticker:hover {
+  transform: rotate(0deg);
 }
 
 .logo {
   display: block;
   height: 32px;
   width: auto;
+}
+
+@media (max-width: 720px) {
+  .profile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-text h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
 }
